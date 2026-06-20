@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "io.github.movamedia-inc/loyaltyvip",
+  "name": "io.github.justinmont84/loyaltyvip",
   "description": "U.S. casino directory + a player's loyalty data, comps, tiers, and gambling tax docs.",
   "repository": {
     "url": "https://github.com/movaMedia-Inc/loyaltyvip-js",
