@@ -1,6 +1,7 @@
 {
   "name": "@loyaltyvip/mcp",
-  "version": "1.0.0",
+  "mcpName": "io.github.justinmont84/loyaltyvip",
+  "version": "1.0.1",
   "description": "Model Context Protocol (MCP) server for LoyaltyVIP — casino directory + your loyalty data as tools for Claude and other AI assistants.",
   "keywords": ["loyaltyvip", "mcp", "model-context-protocol", "casino", "ai", "claude"],
   "homepage": "https://loyaltyvip.com/developers",

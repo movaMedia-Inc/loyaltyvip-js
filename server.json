@@ -6,15 +6,17 @@
     "url": "https://github.com/movaMedia-Inc/loyaltyvip-js",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://loyaltyvip.com/developers",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@loyaltyvip/mcp",
-      "version": "1.0.0",
-      "transport": { "type": "stdio" },
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
         {
           "name": "LOYALTYVIP_API_KEY",
