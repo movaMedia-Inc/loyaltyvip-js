@@ -18,7 +18,7 @@
       "environmentVariables": [
         {
           "name": "LOYALTYVIP_API_KEY",
-          "description": "Personal API key (lvip_live_...). Optional — required only for a player's own data; the casino directory is public.",
+          "description": "Personal API key (lvip_live_...). Optional; needed only for a player's own data.",
           "isSecret": true,
           "isRequired": false
         }
