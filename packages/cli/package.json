@@ -1,0 +1,27 @@
+{
+  "name": "@loyaltyvip/cli",
+  "version": "1.0.0",
+  "description": "Command-line interface for LoyaltyVIP — search the casino directory and access your loyalty data from the terminal.",
+  "keywords": ["loyaltyvip", "casino", "cli", "loyalty", "rewards"],
+  "homepage": "https://loyaltyvip.com/developers",
+  "repository": { "type": "git", "url": "git+https://github.com/movaMedia-Inc/loyaltyvip-js.git", "directory": "packages/cli" },
+  "bugs": { "url": "https://github.com/movaMedia-Inc/loyaltyvip-js/issues" },
+  "license": "MIT",
+  "author": "movaMedia",
+  "type": "module",
+  "bin": { "loyaltyvip": "./dist/index.js" },
+  "files": ["dist", "README.md"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@loyaltyvip/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.6.0"
+  },
+  "publishConfig": { "access": "public" }
+}
