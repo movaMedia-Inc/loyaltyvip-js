@@ -1,0 +1,20 @@
+# Smithery (smithery.ai) deployment config for the LoyaltyVIP MCP server.
+# Runs the published @loyaltyvip/mcp package over stdio. The API key is
+# optional — the public casino directory tools work without one.
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        title: "LoyaltyVIP API key"
+        description: "Optional. Personal API key (lvip_live_...) for a player's own data; the public casino directory needs no key."
+  exampleConfig:
+    apiKey: "lvip_live_xxxxxxxx"
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@loyaltyvip/mcp'],
+      env: config.apiKey ? { LOYALTYVIP_API_KEY: config.apiKey } : {}
+    })
